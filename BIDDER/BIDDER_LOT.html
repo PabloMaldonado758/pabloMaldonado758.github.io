@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../framework/myframework.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-container">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="../images/logo1.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <h1 class="app-name mb-0">PUJAMAX Online Auction</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="../BIDDER/BIDDER_PROFILE.html" class="text-white text-decoration-none me-3"><i
+                        class="fas fa-home"></i> Home</a>
+                <div class="dropdown">
+                    <a href="#" class="text-white text-decoration-none dropdown-toggle" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i> User
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="../BIDDER/BIDDER_PROFILE.html"><i
+                                    class="fas fa-cogs"></i> Profile</a></li>
+                        <li><a class="dropdown-item" href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container container my-4">
+        <!-- Navigation -->
+        <section class="home-container">
+            <nav class="nav-container">
+                <a href="../BIDDER/BIDDER_LOTS_BOARD.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+                <a href="../BIDDER/BIDDER_HISTORY.html" class="nav-item"><i class="fas fa-history"></i>
+                    History</a>
+            </nav>
+        </section>
+        <!-- Filters Section -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="btn-group" role="group" aria-label="Filter Options">
+                <button type="button" class="btn btn-primary"><i class="fas fa-th"></i> All Lots</button>
+                <button type="button" class="btn btn-success"><i class="fas fa-check-circle"></i> Active Lots</button>
+                <button type="button" class="btn btn-warning"><i class="fas fa-clock"></i> Preparing Lots</button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="categoryDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-filter"></i> Categories
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                    <li><a class="dropdown-item" href="#">Category 2</a></li>
+                    <li><a class="dropdown-item" href="#">Category 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Product Cards -->
+        <section class="lots-container">
+            <div class="product-card">
+                <div class="row">
+                    <!-- Product Image Section -->
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/300x200" alt="Product Image" class="product-img mb-3">
+                        <a href="/BIDDER/PRODUCT.html" class="btn btn-view w-100">VIEW THIS LOT</a>
+
+                    </div>
+
+                    <!-- Product Details Section -->
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="mb-0">TITLE</h4>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <strong>Current Price:</strong>
+                                <div class="current-price">$ 290.00</div>
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Condition:</strong>
+                                <div><i class="fas fa-tools"></i> Repairable</div>
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Lot:</strong>
+                                <div><i class="fas fa-tag"></i> 1</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cum provident ex eaque.
+                                Blanditiis expedita impedit ratione quo et id natus nam soluta tempora! Aliquam eos
+                                asperiores tempore nam impedit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="row">
+                    <!-- Product Image Section -->
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/300x200" alt="Product Image" class="product-img mb-3">
+                        <button class="btn btn-view w-100">VIEW THIS LOT</button>
+                    </div>
+
+                    <!-- Product Details Section -->
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="mb-0">TITLE</h4>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <strong>Current Price:</strong>
+                                <div class="current-price">$ 290.00</div>
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Condition:</strong>
+                                <div><i class="fas fa-tools"></i> Repairable</div>
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Lot:</strong>
+                                <div><i class="fas fa-tag"></i> 1</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cum provident ex eaque.
+                                Blanditiis expedita impedit ratione quo et id natus nam soluta tempora! Aliquam eos
+                                asperiores tempore nam impedit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-3 mt-4">
+        <p>&copy; 2024 PujaMax | All rights reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
